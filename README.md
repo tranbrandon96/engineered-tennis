@@ -1,28 +1,17 @@
-# Engineered Tennis 🎾
+# Engineered Tennis 🎾  
+A mechanics-based tennis coaching website built with **Next.js 14, TailwindCSS, and TypeScript**.  
 
-A modern, mechanics-based tennis coaching website built with **Next.js**, **Tailwind CSS**, and deployed on **Vercel**.
+## 🌟 Features
+- Hero section with booking CTA (links directly to Google Calendar for 1 or 2 hour lessons).  
+- Services overview and About section.  
+- Contact information with clean, centered design.  
+- Responsive layout optimized for mobile and desktop.  
+- Deployed with **Vercel** for fast global delivery.  
 
-## 🌐 Live Site
-[Visit Engineered Tennis](https://engineered-tennis.vercel.app)  
+## 🚀 Tech Stack
+- **Frontend:** Next.js (App Router), TypeScript, TailwindCSS  
+- **Deployment:** Vercel (CI/CD from GitHub)  
+- **Version Control:** Git & GitHub  
 
-## 📖 About
-Engineered Tennis is my personal coaching website.  
-I specialize in **High Performance Player Development**, helping players of all ages and levels understand their mechanics at the deepest level.  
-
-The site includes:
-- A clean **Hero section** with a background image  
-- **Services page** describing lesson offerings  
-- **About section** with coaching philosophy  
-- Direct **lesson booking link** via Google Calendar  
-
-## 🛠️ Tech Stack
-- **Framework**: [Next.js](https://nextjs.org/)  
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)  
-- **Deployment**: [Vercel](https://vercel.com/)  
-
-## 🚀 Getting Started
-
-Clone the repo:
-```bash
-git clone https://github.com/YOUR_USERNAME/engineered-tennis.git
-cd engineered-tennis
+## 📅 Booking
+Book a lesson directly via my [Google Calendar Appointment Schedule](https://calendar.app.google/zD6V3MMCcvMpuMPL6).  
