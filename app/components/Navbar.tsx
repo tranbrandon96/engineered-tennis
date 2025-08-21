@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link"; // <-- important
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,16 +10,21 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
       <nav className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Brand */}
-        <a href="/" className="text-lg font-semibold tracking-tight">
+        {/* Brand (internal) */}
+        <Link href="/" className="text-lg font-semibold tracking-tight">
           Engineered <span className="text-emerald-600">Tennis</span>
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="/" className="text-slate-700 hover:text-slate-900">Home</a>
-          <a href="/services" className="text-slate-700 hover:text-slate-900">Services</a>
+          <Link href="/" className="text-slate-700 hover:text-slate-900">
+            Home
+          </Link>
+          <Link href="/services" className="text-slate-700 hover:text-slate-900">
+            Services
+          </Link>
 
+          {/* External booking link stays <a> */}
           <a
             href="https://calendar.app.google/zD6V3MMCcvMpuMPL6"
             target="_blank"
@@ -45,9 +51,22 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden border-t border-slate-200 bg-white">
           <div className="px-4 py-3 flex flex-col gap-3">
-            <a href="/" className="text-slate-700 hover:text-slate-900">Home</a>
-            <a href="/services" className="text-slate-700 hover:text-slate-900">Services</a>
+            <Link
+              href="/"
+              className="text-slate-700 hover:text-slate-900"
+              onClick={() => setOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              href="/services"
+              className="text-slate-700 hover:text-slate-900"
+              onClick={() => setOpen(false)}
+            >
+              Services
+            </Link>
 
+            {/* External keeps <a> */}
             <a
               href="https://calendar.app.google/zD6V3MMCcvMpuMPL6"
               target="_blank"
