@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-6">
         <h1 className="text-5xl md:text-6xl font-bold">Engineered Tennis</h1>
         <p className="mt-4 text-xl md:text-2xl text-gray-100">
-          Precision. Performance. Player Development.
+          Precision. Performance. Player Developments.
         </p>
 
         {/* CTAs */}
