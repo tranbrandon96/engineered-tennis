@@ -1,6 +1,8 @@
 // app/layout.tsx
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
+import Copyright from "./components/Copyright";
 
 export const metadata = {
   title: "Engineered Tennis",
@@ -10,9 +12,16 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen antialiased">
+      {/* flex layout ensures footer sits at bottom even on short pages */}
+      <body className="min-h-screen antialiased flex flex-col">
         <Navbar />
-        {children}
+        <main className="flex-1">{children}</main>
+
+        {/* Contact section appears below every page */}
+        <Contact />
+
+        {/* Thin copyright strip at the very bottom */}
+        <Copyright />
       </body>
     </html>
   );

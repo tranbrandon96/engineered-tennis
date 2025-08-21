@@ -1,4 +1,6 @@
 // app/components/Contact.tsx
+import { FaInstagram, FaYelp, FaGoogle } from "react-icons/fa";
+
 export default function Contact() {
   return (
     <section className="bg-white py-16 px-6">
@@ -57,6 +59,38 @@ export default function Contact() {
         >
           Book a Lesson
         </a>
+      </div>
+
+      {/* Social & Reviews */}
+      <div className="mt-16 max-w-4xl mx-auto text-center">
+        <h3 className="text-2xl font-semibold text-gray-900">Follow & Reviews</h3>
+        <p className="mt-3 text-gray-600">Stay connected and see what others are saying.</p>
+        <div className="mt-6 flex justify-center gap-8 text-3xl text-emerald-700">
+          <a
+            href="https://instagram.com/engineeredtennis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-emerald-500 transition"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.yelp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-emerald-500 transition"
+          >
+            <FaYelp />
+          </a>
+          <a
+            href="https://www.google.com/maps/place/Engineered+Tennis/reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-emerald-500 transition"
+          >
+            <FaGoogle />
+          </a>
+        </div>
       </div>
     </section>
   );
