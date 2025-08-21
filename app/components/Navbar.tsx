@@ -20,6 +20,9 @@ export default function Navbar() {
           <Link href="/" className="text-slate-700 hover:text-slate-900">
             Home
           </Link>
+          <Link href="/about" className="text-slate-700 hover:text-slate-900">
+            About
+          </Link>
           <Link href="/services" className="text-slate-700 hover:text-slate-900">
             Services
           </Link>
