@@ -58,10 +58,14 @@ export default function Navbar() {
             >
               Home
             </Link>
+<<<<<<< Updated upstream
             <Link 
               href="/about" 
               className="hover:text-gray-400">
                 
+=======
+            <Link href="/about" className="hover:text-gray-400">
+>>>>>>> Stashed changes
               About
             </Link>
             <Link
