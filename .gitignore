@@ -17,3 +17,7 @@
 .env.test.local
 .env.production.local
 .vercel
+
+# next-sitemap output
+public/sitemap*.xml
+public/robots.txt
