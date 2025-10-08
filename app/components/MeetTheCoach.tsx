@@ -29,7 +29,7 @@ export default function MeetTheCoach() {
         <motion.p variants={fadeItem} className="mx-auto mt-4 max-w-2xl text-slate-600 leading-relaxed">
           <span className="font-semibold text-slate-900">Brandon Tran</span>, founder of{" "}
           <span className="font-semibold text-emerald-600">Engineered Tennis</span>, is a
-          high-performance coach and former software engineer who merges <span className="font-medium">biomechanics</span> with{" "}
+          high-performance coach and software engineer who merges <span className="font-medium">biomechanics</span> with{" "}
           <span className="font-medium">system design</span>. His analytical, feedback-driven approach helps players master efficient,
           repeatable mechanics with the precision of an engineered blueprint.
         </motion.p>
