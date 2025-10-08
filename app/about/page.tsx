@@ -1,5 +1,5 @@
 // app/about/page.tsx
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -18,20 +18,21 @@ export default function AboutPage() {
       {/* Text Section */}
       <div className="max-w-2xl space-y-6">
         <p>
-          At <span className="font-bold">Engineered Tennis</span>, I combine biomechanics, 
-          system design principles, and years of coaching experience to help players unlock 
-          their highest potential. My philosophy is that tennis improvement isn’t random — it’s engineered.
+          At <span className="font-bold">Engineered Tennis</span>, I combine biomechanics, system
+          design principles, and years of coaching experience to help players unlock their highest
+          potential. My philosophy is that tennis improvement isn’t random — it’s engineered.
         </p>
 
         <p>
-          I’ve coached across all levels: from USTA juniors and high school athletes to college players. 
-          My approach focuses on mechanics, discipline, and building a strong technical foundation that lasts.
+          I’ve coached across all levels: from USTA juniors and high school athletes to college
+          players. My approach focuses on mechanics, discipline, and building a strong technical
+          foundation that lasts.
         </p>
 
         <p>
-          Tennis has been a lifelong passion, and this project is about giving players access to high-performance 
-          training at an affordable price. Whether your goal is competition or personal growth, I’ll help you 
-          develop the tools to succeed.
+          Tennis has been a lifelong passion, and this project is about giving players access to
+          high-performance training at an affordable price. Whether your goal is competition or
+          personal growth, I’ll help you develop the tools to succeed.
         </p>
       </div>
     </main>

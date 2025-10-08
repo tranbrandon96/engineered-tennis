@@ -1,24 +1,24 @@
 // app/services/page.tsx
 export const metadata = {
-  title: "Services & Pricing | Engineered Tennis",
+  title: 'Services & Pricing | Engineered Tennis',
   description:
-    "Private lessons and small-group clinics focused on biomechanics, movement, and repeatable systems. Book 1–2 hour sessions.",
+    'Private lessons and small-group clinics focused on biomechanics, movement, and repeatable systems. Book 1–2 hour sessions.',
 };
 
 export default function ServicesPage() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-16">
+    <main className="mx-auto max-w-6xl px-4 py-16">
       {/* Header */}
       <section className="mb-10">
         <h1 className="text-4xl font-bold text-slate-900">Services & Pricing</h1>
-        <p className="mt-3 text-slate-600 max-w-2xl">
-          Mechanics-first coaching in San Diego. Choose a 1–2 hour session and get
-          targeted feedback you can apply immediately.
+        <p className="mt-3 max-w-2xl text-slate-600">
+          Mechanics-first coaching in San Diego. Choose a 1–2 hour session and get targeted feedback
+          you can apply immediately.
         </p>
       </section>
 
       {/* Services (2-up) */}
-      <section className="grid gap-8 md:grid-cols-2 mb-12">
+      <section className="mb-12 grid gap-8 md:grid-cols-2">
         {/* Private Lessons */}
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-semibold text-emerald-700">Private Lessons</h2>
@@ -61,7 +61,7 @@ export default function ServicesPage() {
           {/* 1 Hour */}
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h4 className="text-xl font-semibold">Private — 1 Hour</h4>
-            <p className="mt-1 text-emerald-700 text-2xl font-bold">$X</p>
+            <p className="mt-1 text-2xl font-bold text-emerald-700">$80</p>
             <p className="mt-2 text-slate-600">
               Focused technical session: one or two priorities and a drill plan to reinforce.
             </p>
@@ -70,7 +70,7 @@ export default function ServicesPage() {
           {/* 2 Hours */}
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h4 className="text-xl font-semibold">Private — 2 Hours</h4>
-            <p className="mt-1 text-emerald-700 text-2xl font-bold">$X</p>
+            <p className="mt-1 text-2xl font-bold text-emerald-700">$140</p>
             <p className="mt-2 text-slate-600">
               Deeper mechanics + live application. Ideal for serve work and full-pattern training.
             </p>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
 
       {/* CTA */}
       <section className="mb-12">
-        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="flex flex-col gap-4 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h3 className="text-xl font-semibold text-slate-900">Ready to train?</h3>
             <p className="text-slate-700">
@@ -88,10 +88,10 @@ export default function ServicesPage() {
             </p>
           </div>
           <a
-            href="https://calendar.app.google/zD6V3MMCcvMpuMPL6"
+            href="https://calendar.app.google/pxjE9UQCSZsQvxrx9"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700 transition"
+            className="inline-flex items-center justify-center rounded-md bg-emerald-600 px-5 py-3 font-medium text-white transition hover:bg-emerald-700"
           >
             Book a Lesson
           </a>

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,51 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.9));
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 1px #00ff88) drop-shadow(0 0 3px #00ff88);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #00ff88) drop-shadow(0 0 10px #00ff88);
+  }
+}
+
+.glow-hover:hover {
+  animation: glowPulse 2s infinite ease-in-out;
+}
+
+@keyframes buttonGlow {
+  0%,100% { box-shadow: 0 0 0px rgba(16,185,129,0.0); }
+  50%     { box-shadow: 0 0 18px rgba(16,185,129,0.55); }
+}
+.button-glow { animation: buttonGlow 1.6s ease-in-out infinite; }
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(16, 185, 129, 0.3),
+                0 0 12px rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6),
+                0 0 18px rgba(16, 185, 129, 0.4);
+  }
+}
+
+.glow-pulse {
+  animation: pulseGlow 3s ease-in-out infinite;
 }
