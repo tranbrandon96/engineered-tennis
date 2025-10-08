@@ -40,11 +40,11 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur ${
-        scrolled ? 'shadow-[0_4px_20px_-8px_rgba(0,0,0,0.25)]' : ''
-      }`}
-    >
+<header
+  className={`sticky top-0 z-50 border-b border-slate-200
+              bg-white/95 md:bg-white/75 md:backdrop-blur
+              ${scrolled ? 'shadow-[0_4px_20px_-8px_rgba(0,0,0,0.18)]' : ''}`}
+>
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo = Home */}
 <Link
@@ -55,14 +55,14 @@ export default function Navbar() {
 <div
   className="relative h-11 w-11 flex items-center justify-center rounded-full overflow-hidden
              bg-black ring-1 ring-emerald-400/30 transition-all duration-300
-             group-hover:ring-emerald-400 group-hover:shadow-[0_0_12px_#00ff88]
-             animate-logo-fade-glow animate-logo-breathe"
+             group-hover:ring-emerald-400
+             motion-safe:animate-logo-fade"
 >
   <Image
     src="/favicon.png"
     alt="Engineered Tennis Logo"
     fill
-    className="object-contain scale-[1.1] transition-transform duration-200 group-hover:scale-[1.15]"
+    className="object-contain scale-[1.1] transition-transform duration-200 group-hover:scale-[1.12]"
     priority
   />
 </div>
