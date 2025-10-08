@@ -40,32 +40,37 @@ export default function Navbar() {
   }, []);
 
   return (
-<header className="sticky top-0 z-50 border-b border-slate-200 bg-white">
+    <header
+      className={`sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur ${
+        scrolled ? 'shadow-[0_4px_20px_-8px_rgba(0,0,0,0.25)]' : ''
+      }`}
+    >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        {/* Logo → Home */}
+        {/* Logo = Home */}
 <Link
   href="/"
   aria-label="Engineered Tennis – Home"
-  className="inline-flex items-center"
+  className="group inline-flex items-center transition-all duration-300"
 >
-  <Image
-    src="/favicon.png"           // make sure this exists in /public
-    alt="Engineered Tennis Logo"
-    width={40}
-    height={40}
-    className="block h-10 w-10 object-contain"
-    priority
-  />
+  <div className="relative h-11 w-11 overflow-hidden rounded-full ring-1 ring-emerald-400/30 transition-all duration-300 glow-pulse group-hover:ring-emerald-400 group-hover:shadow-[0_0_12px_#00ff88]">
+    <Image
+      src="/engineered-ball.svg"
+      alt="Engineered Tennis"
+      fill
+      className="object-cover [object-position:center_48%] scale-[1.6] transition-transform duration-200 group-hover:scale-[1.7]"
+      priority
+    />
+  </div>
   <span className="sr-only">Engineered Tennis</span>
 </Link>
 
 
-        {/* Desktop links */}
+        {/* Desktop links (Home removed) */}
         <div className="hidden items-center gap-6 md:flex">
           <NavLink href="/about">About</NavLink>
           <NavLink href="/services">Services</NavLink>
 
-          {/* External booking link */}
+          {/* External booking link stays <a> */}
           <a
             href="https://calendar.app.google/zD6V3MMCcvMpuMPL6"
             target="_blank"
@@ -92,6 +97,7 @@ export default function Navbar() {
       {open && (
         <div className="border-t border-slate-200 bg-white md:hidden">
           <div className="flex flex-col gap-3 px-4 py-3">
+            {/* No Home here either; logo is Home */}
             <Link href="/about" className="text-slate-700 hover:text-slate-900" onClick={() => setOpen(false)}>
               About
             </Link>
