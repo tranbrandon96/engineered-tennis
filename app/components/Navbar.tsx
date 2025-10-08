@@ -40,10 +40,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 border-b border-slate-200
-                  bg-white/95 ${scrolled ? 'shadow-[0_4px_20px_-8px_rgba(0,0,0,0.12)]' : ''}`}
-    >
+<header className="sticky top-0 z-50 border-b border-slate-200 bg-white">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo → Home */}
 <Link
@@ -51,16 +48,14 @@ export default function Navbar() {
   aria-label="Engineered Tennis – Home"
   className="inline-flex items-center"
 >
-  <div className="h-11 w-11 rounded-full bg-black flex items-center justify-center">
-    <Image
-      src="/favicon.png"
-      alt="Engineered Tennis Logo"
-      width={44}
-      height={44}
-      className="object-contain"
-      priority
-    />
-  </div>
+  <Image
+    src="/favicon.png"           // make sure this exists in /public
+    alt="Engineered Tennis Logo"
+    width={40}
+    height={40}
+    className="block h-10 w-10 object-contain"
+    priority
+  />
   <span className="sr-only">Engineered Tennis</span>
 </Link>
 
