@@ -101,63 +101,64 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Fun Facts Card */}
-          <div className="rounded-2xl border border-emerald-100 bg-white p-8 shadow-sm transition hover:shadow-md sm:col-span-2">
-            <h3 className="mb-4 text-xl font-semibold text-emerald-600">
-              Fun Facts
-            </h3>
-            <ul className="space-y-3 text-slate-700">
-              <li>
-                • <span className="font-semibold">Tennis GOATs:</span> Roger Federer, Rafael Nadal, and Novak Djokovic — can’t pick just one.
-                Federer’s smoothness, Nadal’s intensity, and Djokovic’s precision all influence my coaching.
-              </li>
+        {/* Fun Facts Card */}
+<div className="rounded-2xl border border-emerald-100 bg-white p-8 shadow-sm transition hover:shadow-md sm:col-span-2">
+  <h3 className="mb-4 text-xl font-semibold text-emerald-600">Fun Facts</h3>
+  <ul className="space-y-5 text-slate-700">
 
-              <li>
-                • <span className="font-semibold">Dream Goal:</span> One reason I started Engineered Tennis was to one day meet Roger Federer —
-                not to talk technique, but to understand his mindset, calm under pressure, and on-court mentality.
-              </li>
+    <li>
+      • <span className="font-semibold">Tennis GOATs:</span> Roger Federer, Rafael Nadal, and Novak Djokovic — can’t pick just one.
+      Federer’s smoothness, Nadal’s intensity, and Djokovic’s precision all influence how I teach balance, rhythm, and purpose in every swing.
+    </li>
 
-              <li>
-{/* GO DUBS! */}
-<span
-  className="bg-gradient-to-r from-blue-600 via-yellow-400 to-blue-600
-             bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
-             animate-[gradient-shift_4s_ease_infinite] coarse-disable-anim"
->
-  GO DUBS!
-</span>
-                — Steph Curry is my GOAT. He represents hard work, discipline, and the quiet confidence that comes from relentless consistency.
-                I grew up watching Kobe Bryant, and his Mamba Mentality taught me that success isn’t about talent — it’s about outworking your
-                opponent in every way. Those two mindsets shape how I coach: stay disciplined, stay humble, and always put in the work.
-              </li>
+    <li>
+      • <span className="font-semibold">Dream Goal:</span> One reason I started Engineered Tennis was to one day meet Roger Federer —
+      not to talk technique, but to understand his mindset, calm under pressure, and on-court mentality.
+    </li>
 
-              <li>
-{/* Rosie */}
-<span
-  className="bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400
-             bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
-             animate-[gradient-shift_4s_ease_infinite] coarse-disable-anim"
->
-  Rosie
-</span>
-                , is basically our mascot — loyal, curious, and always ready to chase a ball.
-              </li>
-            </ul>
+    <li>
+      • <span className="font-semibold">Huge Warriors Fan:</span>{' '}
+      <span
+        className="bg-gradient-to-r from-blue-600 via-yellow-400 to-blue-600
+                   bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
+                   animate-[gradient-shift_4s_ease_infinite] coarse-disable-anim"
+      >
+        GO DUBS!
+      </span>{' '}
+Steph Curry is my GOAT — he represents hard work, discipline, and the quiet confidence that comes from relentless consistency.  
+      Another one of my idols is Kobe Bryant — his Mamba Mentality taught me that success isn’t about talent; it’s about outworking your opponent in every way.  
+      Those two mindsets shape how I coach: stay disciplined, stay humble, and always put in the work.
+    </li>
 
-            {/* Rosie Photo */}
-            <div className="mt-6 flex flex-col items-center">
-              <Image
-                src="/rosie.jpeg" // replace with your dog's photo in /public
-                alt="Rosie — Engineered Tennis Mascot"
-                width={180}
-                height={180}
-                className="rounded-2xl border border-emerald-100 shadow-md"
-              />
-              <p className="mt-2 text-sm italic text-slate-500">
-                Rosie — the Engineered Tennis mascot 🐾
-              </p>
-            </div>
-          </div>
+    <li>
+      • <span className="font-semibold">Dog Person:</span> My German Shepherd{' '}
+      <span
+        className="bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400
+                   bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
+                   animate-[gradient-shift_4s_ease_infinite] coarse-disable-anim"
+      >
+        Rosie
+      </span>{' '}
+      is basically the Engineered Tennis mascot — loyal, curious, and always ready to chase a ball. She reminds me to bring the same energy and joy to coaching every day.
+    </li>
+  </ul>
+
+  {/* Rosie Photo */}
+  <div className="mt-6 flex flex-col items-center">
+    <Image
+      src="/rosie.jpeg"
+      alt="Rosie — Engineered Tennis Mascot"
+      width={180}
+      height={180}
+      className="rounded-2xl border border-emerald-100 shadow-md"
+    />
+    <p className="mt-2 text-sm italic text-slate-500">
+      Rosie — the Engineered Tennis mascot 🐾
+    </p>
+  </div>
+</div>
+
+
         </div>
       </section>
     </main>
