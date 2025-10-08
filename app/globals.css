@@ -78,9 +78,10 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-@keyframes logo-fade {
-  0% { opacity: 0; transform: scale(.92); }
-  100% { opacity: 1; transform: scale(1); }
+/* Disable ALL animations on coarse (touch) pointers;
+   keeps desktop animations, kills them on phones */
+@media (hover: none) and (pointer: coarse) {
+  .coarse-disable-anim {
+    animation: none !important;
+  }
 }
-.animate-logo-fade { animation: logo-fade .6s ease-out both; }
-

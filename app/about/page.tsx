@@ -118,22 +118,26 @@ export default function AboutPage() {
               </li>
 
               <li>
-                • <span className="font-semibold">Basketball Fan:</span> I’m a <span className="font-semibold">huge Warriors fan</span>{" "}
-<span className="bg-gradient-to-r from-blue-600 via-yellow-400 to-blue-600
-                 bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
-                 animate-[gradient-shift_4s_ease_infinite]">
-                  GO DUBS!
-                </span>{" "}
+{/* GO DUBS! */}
+<span
+  className="bg-gradient-to-r from-blue-600 via-yellow-400 to-blue-600
+             bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
+             animate-[gradient-shift_4s_ease_infinite] coarse-disable-anim"
+>
+  GO DUBS!
+</span>
                 — Steph Curry is my GOAT. He represents hard work, discipline, and the quiet confidence that comes from relentless consistency.
                 I grew up watching Kobe Bryant, and his Mamba Mentality taught me that success isn’t about talent — it’s about outworking your
                 opponent in every way. Those two mindsets shape how I coach: stay disciplined, stay humble, and always put in the work.
               </li>
 
               <li>
-                • <span className="font-semibold">Dog Lover:</span> Big dog person. My German Shepherd,{" "}
-<span className="bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400
-                 bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
-                 animate-[gradient-shift_4s_ease_infinite]">
+{/* Rosie */}
+<span
+  className="bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400
+             bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
+             animate-[gradient-shift_4s_ease_infinite] coarse-disable-anim"
+>
   Rosie
 </span>
                 , is basically our mascot — loyal, curious, and always ready to chase a ball.
