@@ -52,15 +52,18 @@ export default function Navbar() {
   aria-label="Engineered Tennis – Home"
   className="group inline-flex items-center transition-all duration-300"
 >
-  <div className="relative h-11 w-11 overflow-hidden rounded-full ring-1 ring-emerald-400/30 transition-all duration-300 glow-pulse group-hover:ring-emerald-400 group-hover:shadow-[0_0_12px_#00ff88]">
-    <Image
-      src="/engineered-ball.svg"
-      alt="Engineered Tennis"
-      fill
-      className="object-cover [object-position:center_48%] scale-[1.6] transition-transform duration-200 group-hover:scale-[1.7]"
-      priority
-    />
-  </div>
+<div className="relative h-11 w-11 flex items-center justify-center rounded-full bg-black transition-all duration-300 group-hover:scale-[1.05]">
+  <Image
+    src="/favicon.png"
+    alt="Engineered Tennis Logo"
+    width={44}
+    height={44}
+    className="object-contain drop-shadow-sm transition-transform duration-200 group-hover:scale-[1.08]"
+    priority
+  />
+</div>
+
+
   <span className="sr-only">Engineered Tennis</span>
 </Link>
 
