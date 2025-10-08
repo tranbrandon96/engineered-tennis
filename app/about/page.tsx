@@ -133,13 +133,13 @@ export default function AboutPage() {
 
               <li>
                 • <span className="font-semibold">Dog Lover:</span> Big dog person. My German Shepherd,{" "}
-                <span
-                  className="bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400
-                             bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
-                             animate-[rosie-glow_4s_ease_infinite]"
-                >
-                  Rosie
-                </span>
+<span
+  className="bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400
+             bg-[length:200%_200%] bg-clip-text text-transparent font-semibold
+             animate-[gradient-shift_4s_ease_infinite]"
+>
+  Rosie
+</span>
                 , is basically our mascot — loyal, curious, and always ready to chase a ball.
               </li>
             </ul>
