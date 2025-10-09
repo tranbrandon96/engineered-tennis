@@ -156,7 +156,7 @@ export default function ServicesPage() {
             </p>
           </div>
           <a
-            href="https://calendar.app.google/pxjE9UQCSZsQvxrx9"
+            href="https://share.google/K6WwDZtzsoXDFfDls"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-emerald-600 px-5 py-3 font-medium text-white transition hover:bg-emerald-700"
