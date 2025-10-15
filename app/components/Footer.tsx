@@ -37,8 +37,8 @@ export default function Footer() {
               </li>
               <li>
                 {/* ✅ internal hash link must use <Link> */}
-                <Link href="/#programs" className="hover:text-white transition">
-                  Programs
+                <Link href="/promise" className="hover:text-white transition">
+                  Promise
                 </Link>
               </li>
               <li>
