@@ -4,29 +4,34 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
+  // Helps build absolute URLs for OG/Twitter/etc.
+  metadataBase: new URL("https://www.engineeredtennis.com"),
+
   title: "Engineered Tennis",
   description:
     "High-performance, mechanics-based tennis coaching in San Diego — founded by Brandon Tran. Learn smarter, move better, and train with purpose.",
   icons: {
     icon: [
-      { url: "/icon.svg?v=3", type: "image/svg+xml" },
-      { url: "/favicon-48x48.png?v=3", sizes: "48x48", type: "image/png" },
-      { url: "/favicon-32x32.png?v=3", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png?v=3", sizes: "16x16", type: "image/png" },
+      { url: "/icon.svg?v=4", type: "image/svg+xml" },
+      { url: "/favicon-48x48.png?v=4", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-32x32.png?v=4", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png?v=4", sizes: "16x16", type: "image/png" },
     ],
     apple: [
-      "/apple-touch-icon.png?v=3",
-      { url: "/apple-touch-icon-180x180.png?v=3", sizes: "180x180" },
+      "/apple-touch-icon.png?v=4",
+      { url: "/apple-touch-icon-180x180.png?v=4", sizes: "180x180" },
     ],
-    shortcut: "/favicon.ico?v=3",
-    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg?v=3", color: "#10b981" }],
+    shortcut: "/favicon.ico?v=4",
+    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg?v=4", color: "#10b981" }],
   },
   manifest: "/site.webmanifest",
+  // Canonical + OG to the WWW primary domain
+  alternates: { canonical: "https://www.engineeredtennis.com" },
   openGraph: {
     title: "Engineered Tennis — Mechanics-Driven Coaching in San Diego",
     description:
       "Transform your game through biomechanics and system-driven coaching. Precision. Tempo. Timing. Engineered.",
-    url: "https://engineeredtennis.com",
+    url: "https://www.engineeredtennis.com",
     siteName: "Engineered Tennis",
     images: [
       {
