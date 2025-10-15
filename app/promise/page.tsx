@@ -59,7 +59,7 @@ Thanks!`;
     "/images/firstbreak-4.jpeg",
     "/images/firstbreak-5.jpeg",
     //"/images/firstbreak-6.jpeg",
-    //"/images/firstbreak-7.jpeg",
+    "/images/firstbreak-7.jpeg",
   ];
   const [idx, setIdx] = useState(0);
   const [paused, setPaused] = useState(false);
