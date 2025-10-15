@@ -3,22 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
     "postbuild": "next-sitemap",
-    "start": "next start",
     "lint": "eslint",
     "format": "prettier . --write",
-    "check": "prettier . --check && eslint ."
+    "check": "prettier . --check && eslint .",
+  "dev": "next dev",
+  "dev:mobile": "echo \"Your local IP is: $(ipconfig getifaddr en0 || ipconfig | findstr IPv4)\" && next dev -H 0.0.0.0 -p 3000",
+  "build": "next build",
+  "start": "next start"
+
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.23.22",
+    "lucide-react": "^0.545.0",
     "next": "15.5.0",
     "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
-    "react-intersection-observer": "^9.16.0"
+    "react-intersection-observer": "^9.16.0",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -33,6 +40,7 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4",
+    "tw-animate-css": "^1.4.0",
     "typescript": "^5"
   }
 }
