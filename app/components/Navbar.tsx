@@ -107,7 +107,7 @@ export default function Navbar() {
 
             {/* Booking Button */}
             <a
-              href="https://calendar.app.google/pxjE9UQCSZsQvxrx9https://calendar.app.google/pxjE9UQCSZsQvxrx9https://calendar.app.google/pxjE9UQCSZsQvxrx9"
+              href="https://calendar.app.google/pxjE9UQCSZsQvxrx9"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md bg-emerald-600 px-4 py-2 text-white transition hover:bg-emerald-700"

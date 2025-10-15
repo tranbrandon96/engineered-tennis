@@ -34,7 +34,7 @@ const item = {
 };
 
 export default function PromisePage() {
-  const bookingHref = "https://calendar.app.google/zD6V3MMCcvMpuMPL6";
+  const bookingHref = "https://calendar.app.google/pxjE9UQCSZsQvxrx9";
 
   const email = "contact@engineeredtennis.com";
   const subject = "Free Trial Inquiry — from Promise page";
