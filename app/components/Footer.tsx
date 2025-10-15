@@ -1,8 +1,8 @@
 // app/components/Footer.tsx
 "use client";
 
-import Link from "next/link";                // ✅ add this
-import { FaInstagram, FaYelp, FaGoogle } from "react-icons/fa";
+import Link from "next/link"; // ✅ add this
+import { FaGoogle, FaInstagram, FaYelp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -73,16 +73,33 @@ export default function Footer() {
                   View on Maps
                 </a>
               </li>
-              <li>
-                <span className="block text-slate-400">Email</span>
-                <a
-                  href="mailto:contact@engineeredtennis.com?subject=Lesson%20Inquiry%20from%20Website"
-                  className="text-white hover:text-emerald-300 transition break-all"
-                >
-                  contact@engineeredtennis.com
-                </a>
-                <span className="block text-xs text-slate-500">Replies within a day</span>
-              </li>
+<li>
+  <span className="block text-slate-400">Email</span>
+  <a
+    href={`mailto:contact@engineeredtennis.com?subject=${encodeURIComponent(
+      "Free Trial Inquiry — from Website"
+    )}&body=${encodeURIComponent(
+      `Hi Brandon,
+
+I'd like to book a free trial / ask a question. Here are my details:
+
+Name:
+Age:
+Player level (beginner / intermediate / advanced / UTR/USTA rating):
+What I'm looking for (goals):
+Tennis background:
+
+Thanks!`
+    )}`}
+    className="text-white hover:text-emerald-300 transition break-all"
+  >
+    contact@engineeredtennis.com
+  </a>
+  <span className="block text-xs text-slate-500">
+    Replies within a day
+  </span>
+</li>
+
               <li>
                 <span className="block text-slate-400">Phone</span>
                 <a href="tel:+16193208364" className="text-white hover:text-emerald-300 transition">
