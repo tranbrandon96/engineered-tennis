@@ -187,10 +187,7 @@
   100% { opacity: 0; }
 }
 
-/* Duration will be set inline via style.animationDuration */
 .fade-image {
   opacity: 0;
-  animation-name: fade-cycle;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: fade-cycle 18s infinite;
 }
