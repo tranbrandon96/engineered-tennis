@@ -144,29 +144,31 @@ Thanks!`;
 
           {/* ENGINEERED TENNIS: FIRST BREAK HONORS (portrait-optimized carousel) */}
           <motion.figure variants={item} className="relative lg:col-span-6 lg:w-[85%] mx-auto">
-            <div
-              className="relative aspect-[3/4] w-full overflow-hidden rounded-3xl shadow-xl"
-              onMouseEnter={() => setPaused(true)}
-              onMouseLeave={() => setPaused(false)}
-            >
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={photos[idx]}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: fadeSec }}
-                  className="absolute inset-0"
-                >
-                  <Image
-                    src={photos[idx]}
-                    alt="Engineered Tennis: First Break Honors"
-                    fill
-                    className="object-cover object-top rounded-3xl"
-                    priority
-                  />
-                </motion.div>
-              </AnimatePresence>
+<div
+  className="relative aspect-[3/4] w-full overflow-hidden rounded-3xl shadow-xl bg-gray-100"
+  onMouseEnter={() => setPaused(true)}
+  onMouseLeave={() => setPaused(false)}
+>
+<AnimatePresence mode="sync">  {/* was mode="wait" */}
+  <motion.div
+    key={photos[idx]}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: fadeSec, ease: "easeInOut" }}
+    className="absolute inset-0"
+  >
+    <Image
+      src={photos[idx]}
+      alt="Engineered Tennis: First Break Honors"
+      fill
+      className="object-cover object-top rounded-3xl"
+      priority={idx === 0}   // priority only on first render
+      sizes="(min-width:1024px) 40vw, 90vw"
+    />
+  </motion.div>
+</AnimatePresence>
+
 
               {/* Arrows */}
               <button
@@ -395,7 +397,7 @@ Thanks!`;
           className="mx-auto max-w-4xl px-6 py-20 text-center sm:px-8"
         >
           <motion.h3 variants={item} className="text-[1.35rem] font-semibold text-gray-900 sm:text-2xl md:text-3xl">
-            The Promise
+            My Promise
           </motion.h3>
           <motion.p variants={item} className="mx-auto mt-4 max-w-3xl text-base leading-[1.9] text-gray-700">
             I’ll never teach for the sake of teaching. If I can help you, you’ll feel it from day one — through clarity,
