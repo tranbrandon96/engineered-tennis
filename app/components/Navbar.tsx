@@ -50,23 +50,31 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        {/* Logo = Home */}
-        <Link
-          href="/"
-          aria-label="Engineered Tennis – Home"
-          className="group inline-flex items-center transition-all duration-300"
-        >
-          <div className="relative h-11 w-11 overflow-hidden rounded-full ring-1 ring-emerald-400/30 transition-all duration-300 glow-pulse group-hover:ring-emerald-400 group-hover:shadow-[0_0_12px_#00ff88]">
-            <Image
-              src="/engineered-ball.svg"
-              alt="Engineered Tennis"
-              fill
-              className="object-cover [object-position:center_48%] scale-[1.6] transition-transform duration-200 group-hover:scale-[1.7]"
-              priority
-            />
-          </div>
-          <span className="sr-only">Engineered Tennis</span>
-        </Link>
+{/* Logo → Home */}
+<Link
+  href="/"
+  aria-label="Engineered Tennis – Home"
+  className="group inline-flex items-center transition-all duration-300"
+>
+  <div
+    className="relative h-11 w-11 overflow-hidden rounded-full bg-gradient-to-br from-emerald-400/80 to-lime-300/70
+               ring-1 ring-emerald-400/30 transition-all duration-500
+               group-hover:from-emerald-400 group-hover:to-lime-200
+               group-hover:ring-emerald-400 group-hover:shadow-[0_0_18px_rgba(16,255,128,0.6)]"
+  >
+    <div className="absolute inset-[2px] rounded-full bg-white" />
+    <Image
+      src="/icon.svg"
+      alt="Engineered Tennis"
+      fill
+      className="relative object-contain p-1 scale-[1.05] transition-transform duration-500 group-hover:scale-[1.12]"
+      priority
+    />
+  </div>
+  <span className="sr-only">Engineered Tennis</span>
+</Link>
+
+
 
         {/* Desktop links */}
         <div className="hidden items-center gap-6 md:flex">
