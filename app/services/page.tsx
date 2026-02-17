@@ -19,7 +19,7 @@ export default function ServicesPage() {
         <p className="mt-1 text-slate-800">
           Private lessons: <span className="font-semibold">$70 / 1 hr</span> and{" "}
           <span className="font-semibold">$120 / 2 hrs</span>. Limited-time pricing available through{" "}
-          <span className="font-semibold text-emerald-700">October 31</span>.
+          <span className="font-semibold text-emerald-700">April 30th</span>.
         </p>
       </div>
 

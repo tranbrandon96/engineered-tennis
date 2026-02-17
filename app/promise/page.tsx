@@ -4,16 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-    BarChart3,
-    ChevronLeft,
-    ChevronRight,
-    ChevronUp,
-    Flame,
-    Lightbulb,
-    Quote,
-    Target,
-    Trophy,
-    Users,
+  BarChart3,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
+  Flame,
+  Lightbulb,
+  Quote,
+  Target,
+  Trophy,
+  Users,
 } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -58,7 +58,7 @@ Thanks!`;
     "/images/firstbreak-3.jpeg",
     "/images/firstbreak-4.jpeg",
     "/images/firstbreak-5.jpeg",
-    //"/images/firstbreak-6.jpeg",
+    "/images/firstbreak-6.jpeg",
     "/images/firstbreak-7.jpeg",
   ];
   const [idx, setIdx] = useState(0);
