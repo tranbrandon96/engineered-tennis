@@ -7,11 +7,10 @@
     "lint": "eslint",
     "format": "prettier . --write",
     "check": "prettier . --check && eslint .",
-  "dev": "next dev",
-  "dev:mobile": "echo \"Your local IP is: $(ipconfig getifaddr en0 || ipconfig | findstr IPv4)\" && next dev -H 0.0.0.0 -p 3000",
-  "build": "next build",
-  "start": "next start"
-
+    "dev": "next dev",
+    "dev:mobile": "echo \"Your local IP is: $(ipconfig getifaddr en0 || ipconfig | findstr IPv4)\" && next dev -H 0.0.0.0 -p 3000",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -19,7 +18,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.22",
     "lucide-react": "^0.545.0",
-    "next": "15.5.0",
+    "next": "15.5.9",
     "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
