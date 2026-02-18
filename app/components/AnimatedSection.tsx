@@ -1,39 +1,40 @@
 // app/components/AnimatedSection.tsx
 "use client";
 
+import { motion, useAnimation, useReducedMotion, Variants } from "framer-motion";
 import { ReactNode, useEffect } from "react";
-import { motion, Variants, useAnimation, useReducedMotion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 type Props = {
   children: ReactNode;
   id?: string;
   className?: string;
-  /** % of element that must be visible to trigger (0–1). Default 0.3 */
   threshold?: number;
-  /** Stagger delay for children that use variants. Default 0.10s */
   stagger?: number;
-  /** Duration of the container fade. Default 0.6s */
   duration?: number;
-  /** Initial Y offset. Default 24px */
   offsetY?: number;
-  /** If true, animate once and stay visible (no fade-out). Default false */
   once?: boolean;
 };
 
-export const makeContainerVariants = (offsetY = 24, duration = 0.6, stagger = 0.1): Variants => ({
-  hidden: { opacity: 0, y: offsetY },
+export const makeContainerVariants = (duration = 0.35, stagger = 0.1): Variants => ({
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    y: 0,
-    transition: { duration, ease: [0.42, 0, 0.58, 1], staggerChildren: stagger },
+    transition: {
+      type: "tween",
+      duration,
+      ease: "easeOut",
+      staggerChildren: stagger,
+    },
   },
 });
 
-/** Use this on children inside <AnimatedSection> */
 export const fadeItem: Variants = {
-  hidden: { opacity: 0, y: 14 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] } },
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { type: "tween", duration: 0.35, ease: "easeOut" },
+  },
 };
 
 export default function AnimatedSection({
@@ -42,8 +43,7 @@ export default function AnimatedSection({
   className,
   threshold = 0.3,
   stagger = 0.1,
-  duration = 0.6,
-  offsetY = 24,
+  duration = 0.35,
   once = false,
 }: Props) {
   const controls = useAnimation();
@@ -67,7 +67,7 @@ export default function AnimatedSection({
       className={className}
       initial="hidden"
       animate={controls}
-      variants={makeContainerVariants(offsetY, duration, stagger)}
+      variants={makeContainerVariants(duration, stagger)}
     >
       {children}
     </motion.section>

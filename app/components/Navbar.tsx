@@ -81,6 +81,7 @@ export default function Navbar() {
           <NavLink href="/about">About</NavLink>
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/promise">Promise</NavLink>
+          <NavLink href="/cohort">Cohort</NavLink>
 
           {/* Booking Button */}
           <a
@@ -112,6 +113,7 @@ export default function Navbar() {
             <NavLink href="/about" onClick={() => setOpen(false)}>About</NavLink>
             <NavLink href="/services" onClick={() => setOpen(false)}>Services</NavLink>
             <NavLink href="/promise" onClick={() => setOpen(false)}>Promise</NavLink>
+            <NavLink href="/cohort" onClick={() => setOpen(false)}>Cohort</NavLink>
 
             {/* Booking Button */}
             <a
