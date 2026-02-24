@@ -14,7 +14,7 @@ export default function ServicesPage() {
       {/* Announcement */}
       <div className="mb-8 rounded-2xl border border-emerald-200 bg-emerald-50 px-5 py-4 text-emerald-900">
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-          Grand Opening Special — Ends October 31
+          Grand Opening Special — Ends April 30th
         </p>
         <p className="mt-1 text-slate-800">
           Private lessons: <span className="font-semibold">$70 / 1 hr</span> and{" "}
