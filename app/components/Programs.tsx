@@ -50,11 +50,6 @@ export default function Programs() {
     <AnimatedSection
       id="programs"
       className="relative bg-white py-20 md:py-28 scroll-mt-24"
-      threshold={0.35}
-      stagger={0.12}
-      duration={0.6}
-      offsetY={14}
-      once={false} // fade out when scrolled away
     >
       {/* subtle top divider */}
       <div
@@ -122,7 +117,7 @@ function ProgramCard({
   highlight?: boolean;
 }) {
   const cardClass =
-    "group rounded-2xl p-6 text-left shadow-sm ring-1 transition hover:shadow-md " +
+    "group rounded-2xl p-6 text-left shadow-sm ring-1 transition-shadow hover:shadow-md " +
     (highlight ? "bg-emerald-50 ring-emerald-200" : "bg-white ring-slate-200");
 
   return (

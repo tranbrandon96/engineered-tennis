@@ -52,7 +52,7 @@ export default function Hero() {
   variants={container}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: false, amount: 0.5 }}
+  viewport={{ once: true, amount: 0.5 }}
   className="
     relative z-10 flex w-full max-w-6xl flex-col items-center text-center
     translate-y-[6vh] md:translate-y-0   /* ⬅️ move content down on phones */

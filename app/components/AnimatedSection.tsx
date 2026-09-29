@@ -11,29 +11,24 @@ type Props = {
   className?: string;
   threshold?: number;
   stagger?: number;
-  duration?: number;
-  offsetY?: number;
   once?: boolean;
 };
 
-export const makeContainerVariants = (duration = 0.35, stagger = 0.1): Variants => ({
+// Match the fade-and-rise animation used on the Promise page.
+export const makeContainerVariants = (stagger = 0.08): Variants => ({
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      type: "tween",
-      duration,
-      ease: "easeOut",
-      staggerChildren: stagger,
-    },
+    transition: { staggerChildren: stagger },
   },
 });
 
 export const fadeItem: Variants = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
-    transition: { type: "tween", duration: 0.35, ease: "easeOut" },
+    y: 0,
+    transition: { duration: 0.4 },
   },
 };
 
@@ -41,15 +36,14 @@ export default function AnimatedSection({
   children,
   id,
   className,
-  threshold = 0.3,
-  stagger = 0.1,
-  duration = 0.35,
-  once = false,
+  threshold = 0.2,
+  stagger = 0.08,
+  once = true,
 }: Props) {
   const controls = useAnimation();
   const prefersReduced = useReducedMotion();
 
-  const [ref, inView] = useInView({ threshold });
+  const [ref, inView] = useInView({ threshold, triggerOnce: once });
 
   useEffect(() => {
     if (prefersReduced) {
@@ -67,7 +61,7 @@ export default function AnimatedSection({
       className={className}
       initial="hidden"
       animate={controls}
-      variants={makeContainerVariants(duration, stagger)}
+      variants={makeContainerVariants(stagger)}
     >
       {children}
     </motion.section>

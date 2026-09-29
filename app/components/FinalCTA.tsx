@@ -10,11 +10,6 @@ export default function FinalCTA() {
     <AnimatedSection
       id="final-cta"
       className="relative bg-gray-50 py-14 md:py-16"
-      threshold={0.3}
-      duration={0.65}
-      offsetY={16}
-      stagger={0.06}
-      once={false}
     >
       <div
         aria-hidden

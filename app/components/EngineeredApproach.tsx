@@ -9,8 +9,6 @@ export default function EngineeredApproach() {
     <AnimatedSection
       id="approach"
       className="relative isolate overflow-hidden bg-gray-50 py-20 md:py-28"
-      threshold={0.4}
-      once={false}
     >
       {/* subtle top divider */}
       <div
@@ -42,7 +40,7 @@ export default function EngineeredApproach() {
             {/* Analyze Mechanics */}
             <motion.div
               variants={fadeItem}
-              className="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md"
+              className="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition-shadow hover:shadow-md"
             >
               <IconAnalyze />
               <h3 className="mt-4 text-lg font-semibold text-slate-900">
@@ -62,7 +60,7 @@ export default function EngineeredApproach() {
             {/* Design Systems */}
             <motion.div
               variants={fadeItem}
-              className="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md"
+              className="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition-shadow hover:shadow-md"
             >
               <IconDesign />
               <h3 className="mt-4 text-lg font-semibold text-slate-900">
@@ -82,7 +80,7 @@ export default function EngineeredApproach() {
             {/* Iterate & Refine */}
             <motion.div
               variants={fadeItem}
-              className="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md"
+              className="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition-shadow hover:shadow-md"
             >
               <IconIterate />
               <h3 className="mt-4 text-lg font-semibold text-slate-900">
