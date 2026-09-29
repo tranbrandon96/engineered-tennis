@@ -5,24 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services & Pricing | Engineered Tennis",
   description:
-    "Grand Opening Special through October 31: $70 (1 hr) and $120 (2 hrs). Mechanics-first tennis coaching in San Diego.",
+    "Private tennis lessons: $80 for 1 hour and $140 for 2 hours. Mechanics-first tennis coaching in San Diego.",
 };
 
 export default function ServicesPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-16">
-      {/* Announcement */}
-      <div className="mb-8 rounded-2xl border border-emerald-200 bg-emerald-50 px-5 py-4 text-emerald-900">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-          Grand Opening Special — Ends April 30th
-        </p>
-        <p className="mt-1 text-slate-800">
-          Private lessons: <span className="font-semibold">$70 / 1 hr</span> and{" "}
-          <span className="font-semibold">$120 / 2 hrs</span>. Limited-time pricing available through{" "}
-          <span className="font-semibold text-emerald-700">April 30th</span>.
-        </p>
-      </div>
-
       {/* Header */}
       <section className="mb-10">
         <h1 className="text-4xl font-bold text-slate-900">Services & Pricing</h1>
@@ -99,9 +87,6 @@ export default function ServicesPage() {
       <section className="mb-12">
         <div className="flex items-center gap-3">
           <h3 className="text-2xl font-semibold text-slate-900">Pricing</h3>
-          <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
-            Promo Ends Oct 31
-          </span>
         </div>
         <p className="mt-2 max-w-2xl text-slate-600">
           Transparent and simple. Pay on site after your session; packages available on request.
@@ -112,8 +97,7 @@ export default function ServicesPage() {
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h4 className="text-xl font-semibold">Private — 1 Hour</h4>
             <div className="mt-1 flex items-baseline gap-3">
-              <p className="text-2xl font-bold text-emerald-700">$70</p>
-              <p className="text-sm text-slate-500 line-through">$80</p>
+              <p className="text-2xl font-bold text-emerald-700">$80</p>
             </div>
             <p className="mt-2 text-slate-600">
               Focused technical session: one or two priorities and a drill plan to reinforce.
@@ -129,8 +113,7 @@ export default function ServicesPage() {
               </span>
             </div>
             <div className="mt-1 flex items-baseline gap-3">
-              <p className="text-2xl font-bold text-emerald-700">$120</p>
-              <p className="text-sm text-slate-500 line-through">$140</p>
+              <p className="text-2xl font-bold text-emerald-700">$140</p>
             </div>
             <p className="mt-2 text-slate-600">
               Deeper mechanics + live application. Ideal for serve work and full-pattern training.
@@ -152,7 +135,7 @@ export default function ServicesPage() {
           <div>
             <h3 className="text-xl font-semibold text-slate-900">Ready to train?</h3>
             <p className="text-slate-700">
-              Pick a 1–2 hour slot from live availability. Instant email confirmation. Promo pricing applies through October 31.
+              Pick a 1–2 hour slot from live availability. Instant email confirmation.
             </p>
           </div>
           <a
