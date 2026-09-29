@@ -9,11 +9,6 @@ export default function MeetTheCoach() {
     <AnimatedSection
       id="coach"
       className="relative bg-white py-20 md:py-24 scroll-mt-24"
-      threshold={0.3}
-      stagger={0.1}
-      duration={0.6}
-      offsetY={20}
-      once={false} // fade out when leaving view
     >
       {/* top divider */}
       <div
